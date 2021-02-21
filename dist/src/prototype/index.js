@@ -1,9 +1,10 @@
 import UserBuilder from './Builder.js';
 export default () => {
     const user1 = new UserBuilder();
+    //const user1 = user.build();
     user1.setFirstName('Nicoleta');
     user1.setAdmin(true);
-    const user2 = user1.clone().getAllValues();
+    const user2 = user1.clone();
     const user3 = user2;
     console.log('User1:', user1);
     console.log('User2:', user2);

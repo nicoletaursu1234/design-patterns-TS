@@ -1,5 +1,6 @@
-import prototype from './src/prototype/index.js';
+import factory from './src/factory/index.js';
 //singleton();
 //build();
-prototype();
+//prototype();
+factory();
 //# sourceMappingURL=index.js.map

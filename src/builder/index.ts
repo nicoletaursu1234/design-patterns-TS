@@ -1,11 +1,12 @@
 import UserBuilder from "./Builder.js";
 
 export default () => {
-  const builder = new UserBuilder();
+  const userBuilder = new UserBuilder();
 
-  builder.setFirstName("Nicoleta");
-  builder.setLastName("Ursu");
-  builder.setAdmin(true);
+  userBuilder.setFirstName("Nicoleta");
+  userBuilder.setLastName("Ursu");
+  userBuilder.setAdmin(true);
+  console.log(userBuilder.build());
 
-  console.log(builder);
+  console.log(userBuilder);
 };

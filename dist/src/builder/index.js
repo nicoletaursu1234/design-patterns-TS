@@ -1,9 +1,10 @@
 import UserBuilder from "./Builder.js";
 export default () => {
-    const builder = new UserBuilder();
-    builder.setFirstName("Nicoleta");
-    builder.setLastName("Ursu");
-    builder.setAdmin(true);
-    console.log(builder);
+    const userBuilder = new UserBuilder();
+    userBuilder.setFirstName("Nicoleta");
+    userBuilder.setLastName("Ursu");
+    userBuilder.setAdmin(true);
+    console.log(userBuilder.build());
+    console.log(userBuilder);
 };
 //# sourceMappingURL=index.js.map

@@ -1,60 +1,57 @@
 import User from "../builder/User.js";
 
-interface ICloneable {
+interface IPrototype {
   clone: () => User;
 }
 
-export default class UserBuilder implements ICloneable {
-  firstName = ""
-  lastName = ""
-  gender = ""
-  age = 0
-  address = ""
-  country = ""
-  isAdmin = false
+export default class UserBuilder implements IPrototype {
+  firstName = "";
+  lastName = "";
+  gender = "";
+  age = 0;
+  address = "";
+  country = "";
+  isAdmin = false;
 
-  constructor(){
-      
+  constructor() {}
+
+  setFirstName(firstName: string) {
+    this.firstName = firstName;
   }
 
-  setFirstName(firstName : string){
-      this.firstName = firstName
+  setLastName(lastName: string) {
+    this.lastName = lastName;
   }
 
-  setLastName(lastName : string){
-      this.lastName = lastName
+  setGender(gender: string) {
+    this.gender = gender;
   }
 
-  setGender(gender : string){
-      this.gender = gender
+  setAge(age: number) {
+    this.age = age;
   }
 
-  setAge(age : number){
-      this.age = age
+  setAddress(address: string) {
+    this.address = address;
   }
 
-  setAddress(address : string){
-      this.address = address
+  setCountry(country: string) {
+    this.country = country;
   }
 
-  setCountry(country : string){
-      this.country = country
-  }
- 
-  setAdmin(isAdmin : boolean){
-      this.isAdmin = isAdmin
+  setAdmin(isAdmin: boolean) {
+    this.isAdmin = isAdmin;
   }
 
-  build() : User {
-      return new User(this)
+  build(): User {
+    return new User(this);
   }
 
-  getAllValues(){
-      return this
+  getAllValues() {
+    return this;
   }
 
-  clone() : UserBuilder {
-    return Object.assign({}, this)
+  clone(): UserBuilder {
+    return Object.assign({}, this);
   }
-
 }

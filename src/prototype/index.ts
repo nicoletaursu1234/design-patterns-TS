@@ -2,7 +2,8 @@ import UserBuilder from './Builder.js';
 
 export default () => {
   const user1 = new UserBuilder();
-  
+  //const user1 = user.build();
+
   user1.setFirstName('Nicoleta');
   user1.setAdmin(true);
 
