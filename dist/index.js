@@ -1,6 +1,7 @@
-import factory from './src/factory/index.js';
+import abstractFactory from './src/abstractFactory/index.js';
 //singleton();
 //build();
 //prototype();
-factory();
+//factory();
+abstractFactory();
 //# sourceMappingURL=index.js.map

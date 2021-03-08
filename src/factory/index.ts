@@ -1,14 +1,14 @@
 import DisciplineCreator from "./Creator.js";
 
 export default () => {
-  const lab = new DisciplineCreator().create("lab", {
+  const lab = DisciplineCreator.create("lab", {
     name: "TMPS",
     classroom: "518",
     teacher: "Bitca Ernest",
     nrHomeworks: "4",
   });
 
-  const seminar = new DisciplineCreator().create("seminar", {
+  const seminar = DisciplineCreator.create("seminar", {
     name: "TS",
     classroom: "405",
     teacher: "Prisacaru Adrian",

@@ -4,11 +4,11 @@ import Lab from "./Lab.js";
 import Lecture from "./Lecture.js";
 
 interface IDisciplineCreator {
-  create: (type: string, props?: Object) => Discipline;
+  create?: (type: string, props?: Object) => Discipline;
 }
 
 export default class DisciplineCreator implements IDisciplineCreator {
-  public create = (type: string, props): Discipline => {
+  static create = (type: string, props): Discipline => {
     const lowercaseType = type.toLowerCase();
 
     if (lowercaseType.includes("seminar")) {
