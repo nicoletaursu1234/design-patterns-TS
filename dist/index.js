@@ -1,4 +1,4 @@
-import decorator from './src/structural/Decorator/index.js';
+import adapter from './src/structural/Adapter/index.js';
 ////creational:
 //singleton();
 //build();
@@ -7,8 +7,10 @@ import decorator from './src/structural/Decorator/index.js';
 //abstractFactory();
 ////structural
 //bridge()
-//adapter()
+adapter();
 //composite()
 //proxy()
-decorator();
+//decorator()
+////behavioral
+//mediator()
 //# sourceMappingURL=index.js.map

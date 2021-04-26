@@ -1,25 +1,26 @@
-import UniversityComponent from './UniversityComponent.js';
+import UniversityComponent from "./UniversityComponent.js";
 
-export default class Speciality extends UniversityComponent{
-  components = []
+export default class Speciality extends UniversityComponent {
+  components = [];
 
   constructor(name: string) {
-    super(name)
+    super(name);
   }
 
-  display = (level = 0) => {
-    console.log(this.name)
+  public display = () => {
+    console.log(this.name, ":\n");
 
-    this.components.forEach(element => {
-      element.display(level + 1)
-    })
-  }
+    this.components.forEach((element) => {
+      console.log(element.name);
+      console.log(element.components, "\n");
+    });
+  };
 
-  addComponent = (component: UniversityComponent) => {
+  public addComponent = (component: UniversityComponent) => {
     this.components.push(component);
-  }
+  };
 
-  removeComponent = (component: UniversityComponent) => {
+  public removeComponent = (component: UniversityComponent) => {
     delete this.components[this.components.indexOf(component)];
-  }
+  };
 }

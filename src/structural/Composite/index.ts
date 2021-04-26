@@ -11,7 +11,7 @@ let laborator: DisciplineType = new DisciplineType("Laborator");
 let empty: DisciplineType = new DisciplineType("");
 
 let TMPS: Discipline = new Discipline("TMPS");
-let PM3D: Discipline = new Discipline("PM3D");
+let SDA: Discipline = new Discipline("SDA");
 let PR: Discipline = new Discipline("PR");
 
 const addDiscipline = (
@@ -32,8 +32,8 @@ export default () => {
   TI.addComponent(PR);
   addDiscipline(PR, curs, empty, laborator);
 
-  RM.addComponent(PM3D);
-  addDiscipline(PM3D, curs, seminar, laborator);
+  RM.addComponent(SDA);
+  addDiscipline(SDA, curs, null, laborator);
 
   TI.display();
   RM.display();

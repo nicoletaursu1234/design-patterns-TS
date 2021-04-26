@@ -10,6 +10,8 @@ import composite from './src/structural/Composite/index.js';
 import proxy from './src/structural/Proxy/index.js';
 import decorator from './src/structural/Decorator/index.js'
 
+import mediator from './src/behavioral/Mediator/index.js'
+
 ////creational:
 //singleton();
 //build();
@@ -19,8 +21,11 @@ import decorator from './src/structural/Decorator/index.js'
 
 ////structural
 //bridge()
-//adapter()
+adapter()
 //composite()
 //proxy()
-decorator()
+//decorator()
+
+////behavioral
+//mediator()
 

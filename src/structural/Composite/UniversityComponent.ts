@@ -5,5 +5,5 @@ export default abstract class UniversityComponent {
     this.name = name;
   }
 
-  display = (level = 0) => {};
+  display = () => {};
 }

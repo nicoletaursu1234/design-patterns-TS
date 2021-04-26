@@ -25,7 +25,6 @@ export default () => {
   const displayDetailed = new DisplayDetailed(TMPS)
   const displayShort = new DisplayShort(PR);
 
-  //console.log('TMPS', TMPS)
   console.log(displayShort.generate())
   console.log(displayDetailed.generate())
 
