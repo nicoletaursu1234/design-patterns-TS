@@ -3,14 +3,7 @@ import TodosData from "./TodosData";
 
 export default class Proxy {
   readonly todosData: TodosData;
-  readonly cache = [
-    {
-      userId: 1,
-      id: 2,
-      title: "quis ut nam facilis et officia qui",
-      completed: false,
-    },
-  ];
+  readonly cache = [];
 
   constructor(todosData: TodosData) {
     this.todosData = todosData;

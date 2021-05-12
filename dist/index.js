@@ -1,4 +1,4 @@
-import adapter from './src/structural/Adapter/index.js';
+import strategy from './src/behavioral/Strategy/index.js';
 ////creational:
 //singleton();
 //build();
@@ -7,10 +7,13 @@ import adapter from './src/structural/Adapter/index.js';
 //abstractFactory();
 ////structural
 //bridge()
-adapter();
+//adapter()
 //composite()
 //proxy()
 //decorator()
 ////behavioral
 //mediator()
+//observer()
+strategy();
+//memento()
 //# sourceMappingURL=index.js.map

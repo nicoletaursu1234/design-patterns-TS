@@ -2,12 +2,9 @@ import axios from "axios";
 import Todos from "./Todos.js";
 
 export default class TodosData {
-  getData = async (): Promise<[]> => {
-    const { data } = await axios
-      .get("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => response);
-    return data
-  };
+  getData = async (): Promise<[]> => 
+ await axios
+  .get("https://jsonplaceholder.typicode.com/todos")
 
   todos: any = this.getData();
 

@@ -11,6 +11,9 @@ import proxy from './src/structural/Proxy/index.js';
 import decorator from './src/structural/Decorator/index.js'
 
 import mediator from './src/behavioral/Mediator/index.js'
+import observer from './src/behavioral/Observer/index.js'
+import memento from './src/behavioral/Memento/index.js'
+import strategy from './src/behavioral/Strategy/index.js'
 
 ////creational:
 //singleton();
@@ -21,11 +24,13 @@ import mediator from './src/behavioral/Mediator/index.js'
 
 ////structural
 //bridge()
-adapter()
+//adapter()
 //composite()
 //proxy()
 //decorator()
 
 ////behavioral
-//mediator()
-
+mediator()
+//observer()
+//strategy()
+//memento()
